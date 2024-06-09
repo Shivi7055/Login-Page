@@ -1,0 +1,30 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+<div class="col left-main">
+  <div class="contain-form">
+      <h3>Let's you sign in!</h3>
+      <form class="needs-validation" method="post" action="/login">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required minlength="3" maxlength="20">
+            <div class="invalid-feedback">Please provide a valid username(3-20 characters).</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" is-invalid required minlength="6">
+
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            <div class="invalid-feedback">Please provide a password (at least 6 characters).</div>
+          </div>
+          <button type="submit" class="btn btn-no-hover">Sign In</button>
+        </form> 
+  </div>
+</div>
+<div class="col right-main">
+  <img src="../assets/working_men.jpg" class="img-fluid girl">
+</div>
+</body>
